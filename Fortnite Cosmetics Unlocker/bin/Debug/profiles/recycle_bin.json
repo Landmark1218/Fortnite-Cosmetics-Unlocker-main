@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang=”ja”>
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+                <meta charset="UTF-8">
+    <title>
+        Sakura    </title>
+    <meta name="description" content="Sakura">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131275552-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131275552-1');
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, height=device-height ,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<meta name="author" content="BiruFN">
+<meta content="Project Sakura" property="og:title" />
+<meta content="Let's check and Blossom Together" property="og:description" />
+<meta content="https://sakurafn.pages.dev/" property="og:url" />
+<meta content="https://sakurafn.pages.dev/img/logo.png" property="og:image" />
+<meta content="#ffdbed" data-react-helmet="true" name="theme-color" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Project Sakura" />
+<meta name="twitter:url" content="https://sakurafn.pages.dev/" />
+<meta name="twitter:description" content="Let's check and Blossom Together" />
+<meta name="twitter:image" content="/images/ogp.png" />    <meta property="og:title" content="Project Sakura">
+    <meta property="og:url" content="https://sakurafn.pages.dev/">
+    <meta property="og:image" content="https://sakurafn.pages.dev/img/logo.png">
+    <meta property="og:description" content="Let's check and Blossom Together">
+    <meta property="og:type" content="article">
+    <link rel="canonical" href="index.html">
+    <link rel="shortcut icon" href type=image/vnd.microsoft.icon>
+<link rel=icon href type=image/vnd.microsoft.icon>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Spectral" rel="stylesheet">
+<link rel=stylesheet type=text/css href="css/style.css">
+
+<div id="sakura_block">
+	<div class="sakura_parts_box">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_01.png" alt="" class="parts_01">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_02.png" alt="" class="parts_02">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_03.png" alt="" class="parts_03">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_04.png" alt="" class="parts_04">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_05.png" alt="" class="parts_05">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_06.png" alt="" class="parts_06">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_07.png" alt="" class="parts_07">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_01.png" alt="" class="parts_08">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_02.png" alt="" class="parts_09">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_03.png" alt="" class="parts_10">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_04.png" alt="" class="parts_11">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_05.png" alt="" class="parts_12">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_06.png" alt="" class="parts_13">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_07.png" alt="" class="parts_14">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_01.png" alt="" class="parts_15">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_02.png" alt="" class="parts_16">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_03.png" alt="" class="parts_17">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_04.png" alt="" class="parts_18">
+	  <img src="https://adatype.co.jp/info/wp-content/uploads/2021/03/parts_05.png" alt="" class="parts_19">
+	</div>
+  </div>
+
+</head>
+
+<body class="index">
+    <div id="fake-loading"></div>
+    <div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<header>
+    <a href="index.html" class="logo-wrap">
+        <figure class="logo logo--top js-trigger">
+            <span class="cercle-home"></span>
+        </figure>
+    </a>
+
+    <a href="https://sakurafn.pages.dev/discord" target="_blank" class="hi">
+        Discord
+    </a>
+
+    <a href="about.html" class="menu-btn js-menu-btn">
+        <div class="menu-btn__circles">
+            <span class="menu-btn__circle menu-btn__circle--top js-menu-btn__circle--top"></span>
+            <span class="menu-btn__circle menu-btn__circle--bottom js-menu-btn__circle--bottom"></span>
+        </div>
+        <div class="menu-btn__text">About</div>
+    </a>
+</header>
+
+        <div class="scroll" data-scroll>
+	<div class="scroll-content" data-scroll-content>
+
+		<article class="slide slideFull slide--1 js-slide ">
+
+			<div class="slide__inner">
+				<div class="slide__img js-transition-img">
+					<figure class="js-transition-img__inner">
+					</figure>
+				</div>
+			</div>
+		</article>
+		
+		<article class="slide slide--2 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img js-transition-img">
+					<figure class="js-transition-img__inner">
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--3 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img js-transition-img">
+					<figure class="js-transition-img__inner">
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--1 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img">
+					<figure>
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--2 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img">
+					<figure>
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--1 js-slide">
+			<div class="slide__inner">
+
+				<div class="slide__img js-transition-img">
+					<figure class="js-transition-img__inner">
+					</figure>
+				</div>
+
+			</div>
+		</article>
+
+		<article class="slide slide--2 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img">
+					<figure>
+					</figure>
+				</div>
+			</div>
+		</article>
+
+
+
+		<article class="slide slide--3 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img js-transition-img">
+					<figure class="js-transition-img__inner">
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--1 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img">
+					<figure>
+					</figure>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide slide--2 js-slide">
+			<div class="slide__inner">
+				<div class="slide__img">
+					<figure>
+					</figure>
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<div class="scroll-content scroll-content--last" data-scroll-content>
+		<article class="slide slideFull slide--1 js-slide">
+			<div class="slide__inner">
+				<div class="slide__sub-title">
+					<span></span>
+				</div>
+
+				<h1 class="slide__title">
+					<div class="">
+						<span class="index-title-01">Sakura</span> <span class="index-title-02"></span> <span class="index-title-03"></span>
+					</div>
+					<p class="index-subtitle">
+						FN TOOL / HYBRID
+					</p>
+				</h1>
+
+				<div class="slide__img slide__img--proxy"></div>
+			</div>
+		</article>
+	</div>
+</div>
+    
+    <div class="mask js-mask">
+        <div class="mask__slice js-mask__slice"></div>
+        <div class="mask__slice js-mask__slice"></div>
+        <div class="mask__slice js-mask__slice"></div>
+        <div class="mask__inner">
+            <figure class="logo logo--mask">
+                <img class="js-logo" src="images/img.svg">
+            </figure>
+            <div class="mask-line js-mask-line">
+                <div class="mask-line__inner js-mask-line"></div>
+            </div>
+        </div>
+    </div>
+  
+    <script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/imagesloaded.pkgd.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    
+    <script src="js/lib/tilt.jquery.min.js"></script>
+    <script src="js/works.min.js"></script>
+    <script src="js/bounce.min.js"></script>
+    
+</body>
+
+</html>
