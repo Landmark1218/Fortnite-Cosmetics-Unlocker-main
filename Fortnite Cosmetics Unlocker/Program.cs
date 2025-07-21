@@ -22,20 +22,20 @@ namespace Fortnite_Cosmetics_Unlocker
             {
                 (string url, string fileName)[] files = new[]
                 {
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/athena.json", "athena.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/campaign.json", "campaign.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/collection_book_people0.json", "collection_book_people0.json"),
-                    ("https://sakurafn.pages.dev/hybrid/profile_template/collection_book_schematics0.json", "collection_book_schematics0.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/collections.json", "collections.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/common_core.json", "common_core.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/common_public.json", "common_public.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/creative.json", "creative.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/metadata.json", "metadata.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/outpost0.json", "outpost0.json"),
-                    ("https://sakurafn.pages.dev/hybrid/profile_template/recycle_bin.json", "recycle_bin.json"),
-                    ("https://github.com/Landmark1218/SakuraSwapper/raw/refs/heads/main/theater0.json", "theater0.json"),
-                    ("https://sakurafn.pages.dev/hybrid/profile_template/theater1.json", "theater1.json"),
-                    ("https://sakurafn.pages.dev/hybrid/profile_template/theater2.json", "theater2.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/athena.json", "athena.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/campaign.json", "campaign.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/collection_book_people0.json", "collection_book_people0.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/collection_book_schematics0.json", "collection_book_schematics0.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/collections.json", "collections.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/common_core.json", "common_core.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/common_public.json", "common_public.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/creative.json", "creative.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/metadata.json", "metadata.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/outpost0.json", "outpost0.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/recycle_bin.json", "recycle_bin.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/theater0.json", "theater0.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/theater1.json", "theater1.json"),
+                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/theater2.json", "theater2.json"),
                 };
 
                 foreach (var (url, fileName) in files)
@@ -69,7 +69,7 @@ namespace Fortnite_Cosmetics_Unlocker
 
             if (!Fiddler.Setup())
             {
-                Console.WriteLine("Fiddlerのセットアップに失敗した");
+                Console.WriteLine("Fiddler setup failed");
                 return;
             }
 
@@ -105,7 +105,7 @@ namespace Fortnite_Cosmetics_Unlocker
 
             TryLaunchPlayInFrontEnd();
 
-            Console.WriteLine("Starting PIE");
+            Console.WriteLine("Starting PIE...");
             Console.WriteLine("To exit, press any key in this window to exit");
             Console.ReadKey(true);
 
@@ -128,7 +128,7 @@ namespace Fortnite_Cosmetics_Unlocker
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"プロセス終了時エラー: {ex.Message}");
+                Console.WriteLine($"Process termination error: {ex.Message}");
             }
         }
 
@@ -148,7 +148,7 @@ namespace Fortnite_Cosmetics_Unlocker
 
             if (manifestsDir == null)
             {
-                Console.WriteLine("Manifestsフォルダがないです");
+                Console.WriteLine("There is no Manifests folder");
                 return;
             }
 
@@ -199,7 +199,7 @@ namespace Fortnite_Cosmetics_Unlocker
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"解析中エラー: {ex.Message}");
+                    Console.WriteLine($"Parsing error: {ex.Message}");
                 }
             }
         }
@@ -220,10 +220,10 @@ namespace Fortnite_Cosmetics_Unlocker
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"OnBeforeRequest エラー: {ex.Message}");
+                Console.WriteLine($"OnBeforeRequest error: {ex.Message}");
             }
         }
-
+           
         private static void OnBeforeResponse(Session session)
         {
             // :)

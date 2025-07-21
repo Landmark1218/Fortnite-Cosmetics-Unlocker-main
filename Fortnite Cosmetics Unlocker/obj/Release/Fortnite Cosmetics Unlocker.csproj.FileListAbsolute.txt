@@ -21,3 +21,4 @@ C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fort
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite.F13AD8B1.Up2Date
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.pdb
+C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe.config
