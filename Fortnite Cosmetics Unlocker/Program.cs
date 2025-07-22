@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace Fortnite_Cosmetics_Unlocker
 {
@@ -105,6 +106,24 @@ namespace Fortnite_Cosmetics_Unlocker
 
             TryLaunchPlayInFrontEnd();
 
+            // 👇 ここからプロセス監視スレッドの追加部分 👇
+            new Thread(() =>
+            {
+                while (true)
+                {
+                    var processes = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping-PlayInFrontEnd");
+                    if (processes.Length == 0)
+                    {
+                        Console.WriteLine("PlayInFrontEnd プロセスが終了しました。ツールを終了します。");
+                        FiddlerApplication.Shutdown();
+                        Environment.Exit(0);
+                    }
+                    Thread.Sleep(3000);
+                }
+            })
+            { IsBackground = true }.Start();
+            // 👆 ここまで追加コード 👆
+
             Console.WriteLine("Starting PIE...");
             Console.WriteLine("To exit, press any key in this window to exit");
             Console.ReadKey(true);
@@ -180,6 +199,46 @@ namespace Fortnite_Cosmetics_Unlocker
                                 {
                                     string playInFrontEndExe = Path.Combine(exeDir, "UnrealEditorFortnite-Win64-Shipping-PlayInFrontEnd.exe");
 
+                                    string paksPath = Path.Combine(installLocation, "FortniteGame", "Content", "Paks");
+                                    if (Directory.Exists(paksPath))
+                                    {
+
+                                        (string url, string fileName)[] pakFiles = new[]
+                                        {
+                                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/UEFNFortniteGame-WindowsUEFN_4.pak", "UEFNFortniteGame-WindowsUEFN_4.pak"),
+                                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/UEFNFortniteGame-WindowsUEFN_AthenaHUD.pak", "UEFNFortniteGame-WindowsUEFN_AthenaHUD.pak"),
+                                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/UEFNFortniteGame-WindowsUEFN_HUDs.pak", "UEFNFortniteGame-WindowsUEFN_HUDs.pak"),
+                                    ("https://github.com/Landmark1218/Trash/raw/refs/heads/main/UEFNFortniteGame-WindowsUEFN_Unlock_P.pak", "UEFNFortniteGame-WindowsUEFN_Unlock_P.pak"),
+                                };
+
+                                        using (WebClient wc = new WebClient())
+                                        {
+                                            foreach (var (url, fileName) in pakFiles)
+                                            {
+                                                string destination = Path.Combine(paksPath, fileName);
+                                                if (File.Exists(destination))
+                                                {
+                                                    continue;
+                                                }
+
+                                                try
+                                                {
+                                                    Console.WriteLine($"Downloading...: {url}");
+                                                    wc.DownloadFile(url, destination);
+                                                    Console.WriteLine($"Download complete");
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    Console.WriteLine($"Download failed: {fileName} - {ex.Message}");
+                                                }
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("The Paks folder was not found.");
+                                    }
+
                                     if (File.Exists(playInFrontEndExe))
                                     {
                                         var startInfo = new ProcessStartInfo
@@ -204,6 +263,7 @@ namespace Fortnite_Cosmetics_Unlocker
             }
         }
 
+
         private static void OnBeforeRequest(Session session)
         {
             try
@@ -223,7 +283,7 @@ namespace Fortnite_Cosmetics_Unlocker
                 Console.WriteLine($"OnBeforeRequest error: {ex.Message}");
             }
         }
-           
+
         private static void OnBeforeResponse(Session session)
         {
             // :)
