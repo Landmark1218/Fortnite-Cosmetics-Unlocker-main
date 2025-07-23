@@ -106,7 +106,6 @@ namespace Fortnite_Cosmetics_Unlocker
 
             TryLaunchPlayInFrontEnd();
 
-            // 👇 ここからプロセス監視スレッドの追加部分 👇
             new Thread(() =>
             {
                 while (true)
@@ -122,7 +121,6 @@ namespace Fortnite_Cosmetics_Unlocker
                 }
             })
             { IsBackground = true }.Start();
-            // 👆 ここまで追加コード 👆
 
             Console.WriteLine("Starting PIE...");
             Console.WriteLine("To exit, press any key in this window to exit");
