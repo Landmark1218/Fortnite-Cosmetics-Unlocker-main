@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>PIEIcon.ico</ApplicationIcon>
+    <ApplicationIcon>804_20241231193622.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BCMakeCert, Version=2.0.9.0, Culture=neutral, PublicKeyToken=67cb91587178ac5a, processorArchitecture=MSIL">
@@ -75,7 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend.cs" />
+    <Compile Include="Downloader.cs" />
     <Compile Include="Fiddler.cs" />
+    <Compile Include="FiddlerHandlers.cs" />
+    <Compile Include="FileName.cs" />
+    <Compile Include="FortniteLauncher.cs" />
     <Compile Include="Locker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +89,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="804_20241231193622.ico" />
     <Content Include="BasicFormatsForCore.dll" />
-    <Content Include="PIEIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

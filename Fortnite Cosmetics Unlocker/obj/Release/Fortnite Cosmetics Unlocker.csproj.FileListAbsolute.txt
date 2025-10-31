@@ -21,3 +21,28 @@ C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fort
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite.F13AD8B1.Up2Date
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe
 C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.pdb
+C:\Fortnite-Cosmetics-Unlocker-main\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe.config
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Fortnite Cosmetics Unlocker.exe.config
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Fortnite Cosmetics Unlocker.exe
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Fortnite Cosmetics Unlocker.pdb
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\BCMakeCert.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\DotNetZip.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\FiddlerCore.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Microsoft.Win32.Registry.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Newtonsoft.Json.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\System.Security.AccessControl.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Telerik.NetworkConnections.dll
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\DotNetZip.pdb
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\DotNetZip.xml
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\FiddlerCore.pdb
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\FiddlerCore.xml
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Newtonsoft.Json.xml
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Telerik.NetworkConnections.pdb
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\bin\Release\Telerik.NetworkConnections.xml
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.csproj.AssemblyReference.cache
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.csproj.CoreCompileInputs.cache
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite.F13AD8B1.Up2Date
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.pdb
+C:\Users\mr200\Downloads\Fortnite-Cosmetics-Unlocker-main-1.1.1 (1)\Fortnite-Cosmetics-Unlocker-main-1.1.1\Fortnite Cosmetics Unlocker\obj\Release\Fortnite Cosmetics Unlocker.exe.config
