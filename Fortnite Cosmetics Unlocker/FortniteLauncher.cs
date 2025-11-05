@@ -12,7 +12,7 @@ namespace Fortnite_Cosmetics_Unlocker
         {
             try
             {
-                foreach (var proc in Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping-PlayInFrontEnd"))
+                foreach (var proc in Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping"))
                 {
                     proc.Kill();
                     proc.WaitForExit();
@@ -63,7 +63,7 @@ namespace Fortnite_Cosmetics_Unlocker
 
                     string installLocation = installLocToken.ToString();
                     string exeDir = Path.Combine(installLocation, "FortniteGame", "Binaries", "Win64");
-                    string playInFrontEndExe = Path.Combine(exeDir, "UnrealEditorFortnite-Win64-Shipping-PlayInFrontEnd.exe");
+                    string playInFrontEndExe = Path.Combine(exeDir, "UnrealEditorFortnite-Win64-Shipping.exe");
 
                     DownloadPaks(installLocation);
 

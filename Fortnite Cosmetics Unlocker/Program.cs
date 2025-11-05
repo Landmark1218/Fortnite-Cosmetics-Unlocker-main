@@ -50,7 +50,7 @@ namespace Fortnite_Cosmetics_Unlocker
             {
                 while (true)
                 {
-                    var processes = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping-PlayInFrontEnd");
+                    var processes = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping");
                     if (processes.Length == 0)
                     {
                         Console.WriteLine("PlayInFrontEnd プロセスが終了しました。ツールを終了します。");
