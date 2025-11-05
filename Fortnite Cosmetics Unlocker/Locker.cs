@@ -355,6 +355,25 @@ namespace Fortnite_Cosmetics_Unlocker
 
             JObject json = JObject.Parse(data);
 
+            // 2025-11-05 とりあえず修正
+            {
+                foreach (var loadout in (JObject)json["loadouts"])
+                {
+                    JArray loadoutSlots = (JArray)json["loadouts"][loadout.Key]["loadoutSlots"];
+
+                    int index = 0;
+                    foreach (JObject slot in loadoutSlots)
+                    {
+                        JToken equippedItemId = json["loadouts"][loadout.Key]["loadoutSlots"][index]["equippedItemId"];
+                        if (equippedItemId != null)
+                        {
+                            json["loadouts"][loadout.Key]["loadoutSlots"][index]["equippedItemId"] = equippedItemId.ToString().Split(':')[0] + ":" + equippedItemId.ToString().Split(':')[1];
+                        }
+                        index++;
+                    }
+                }
+            }
+
             if (loadouts["athenaItemId"].ToString() == json["athenaItemId"].ToString())
             {
                 loadouts["loadouts"] = json["loadouts"];
