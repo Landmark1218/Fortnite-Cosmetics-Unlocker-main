@@ -73,7 +73,7 @@ namespace Fortnite_Cosmetics_Unlocker
                         Process.Start(new ProcessStartInfo
                         {
                             FileName = playInFrontEndExe,
-                            Arguments = "-disableplugins=\"AtomVK,ValkyrieFortnite\"",
+                            Arguments = "-disableplugins=\"AtomVK,FNChaosVD,ValkyrieFortnite,UEFN\"",
                             UseShellExecute = false,
                         });
                     }
