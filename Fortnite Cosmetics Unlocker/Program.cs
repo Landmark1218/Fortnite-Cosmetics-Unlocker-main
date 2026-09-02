@@ -9,14 +9,10 @@ namespace Fortnite_Cosmetics_Unlocker
 {
     internal class Program
     {
-        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
-        public delegate bool PHANDLER_ROUTINE(uint CtrlType);
-
         [DllImport("kernel32.dll", SetLastError = true)]
-        public static extern bool SetConsoleCtrlHandler(PHANDLER_ROUTINE HandlerRoutine, bool Add);
+        private static extern bool SetConsoleCtrlHandler(HandlerRoutine handler, bool add);
 
-        // ガベージコレクションによってハンドラーが破棄されないよう、静的変数で保持します
-        private static PHANDLER_ROUTINE _handler;
+        private delegate bool HandlerRoutine(uint dwCtrlType);
 
         private const uint CTRL_C_EVENT = 0;
         private const uint CTRL_BREAK_EVENT = 1;
@@ -24,25 +20,41 @@ namespace Fortnite_Cosmetics_Unlocker
         private const uint CTRL_LOGOFF_EVENT = 5;
         private const uint CTRL_SHUTDOWN_EVENT = 6;
 
+        private static bool ConsoleCtrlHandler(uint dwCtrlType)
+        {
+            switch (dwCtrlType)
+            {
+                case CTRL_C_EVENT:
+                case CTRL_BREAK_EVENT:
+                case CTRL_CLOSE_EVENT:
+                    Shutdown();
+                    return false;
+                default:
+                    return false;
+            }
+        }
+
         static void Main(string[] args)
         {
-            _handler = new PHANDLER_ROUTINE(HandlerRoutine);
-            SetConsoleCtrlHandler(_handler, true);
-
-            Downloader.EnsureProfilesExist();
-
-            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Welcome to Cosmetics Unlocker For PIE!");
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Credit BiruFN,Landmark0920");
             Console.ResetColor();
 
-            if (!Fiddler.Setup())
+            KillExistingFortnite();
+            if (!CertMaker.createRootCert() || !CertMaker.trustRootCert())
             {
-                Console.WriteLine("Fiddler setup failed");
+                Console.WriteLine("Failed to create/trust root certificate");
                 return;
             }
+            Console.WriteLine("Root certificate created successfully.");
+            FiddlerApplication.BeforeRequest += FiddlerHandlers.OnBeforeRequest;
+            FiddlerApplication.BeforeResponse += FiddlerHandlers.OnBeforeResponse;
+
+            var handler = new HandlerRoutine(ConsoleCtrlHandler);
+            SetConsoleCtrlHandler(handler, true);
+            GC.KeepAlive(handler);
 
             var startupSettings = new FiddlerCoreStartupSettingsBuilder()
                 .ListenOnPort(9999)
@@ -50,35 +62,25 @@ namespace Fortnite_Cosmetics_Unlocker
                 .RegisterAsSystemProxy()
                 .Build();
 
-            FiddlerApplication.BeforeRequest += FiddlerHandlers.OnBeforeRequest;
-            FiddlerApplication.BeforeResponse += FiddlerHandlers.OnBeforeResponse;
-
-            // 通常の終了イベント（これらも残しておきます）
-            AppDomain.CurrentDomain.ProcessExit += (sender, e) => Shutdown();
-            Console.CancelKeyPress += (sender, e) => { Shutdown(); Environment.Exit(0); };
-
             Console.WriteLine("Starting fiddler application");
             FiddlerApplication.Startup(startupSettings);
-
             Backend.Listen();
             Console.WriteLine("Listening to backend");
-
             FortniteLauncher.TryLaunchPlayInFrontEnd();
 
             // プロセス監視スレッド
             new Thread(() =>
             {
-                while (true)
+                var fortniteProcs = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping");
+                while (fortniteProcs.Length > 0)
                 {
-                    var processes = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping");
-                    if (processes.Length == 0)
-                    {
-                        Console.WriteLine("PlayInFrontEnd プロセスが終了しました。ツールを終了します。");
-                        Shutdown();
-                        Environment.Exit(0);
-                    }
                     Thread.Sleep(3000);
+                    fortniteProcs = Process.GetProcessesByName("UnrealEditorFortnite-Win64-Shipping");
                 }
+
+                Console.WriteLine("Fortnite process ended. Shutting down...");
+                Shutdown();
+                Environment.Exit(0);
             })
             { IsBackground = true }.Start();
 
@@ -91,28 +93,33 @@ namespace Fortnite_Cosmetics_Unlocker
             Shutdown();
         }
 
-       
-        private static bool HandlerRoutine(uint type)
+        private static void KillExistingFortnite()
         {
-            switch (type)
+            try
             {
-                case CTRL_CLOSE_EVENT:
-                case CTRL_LOGOFF_EVENT:
-                case CTRL_SHUTDOWN_EVENT:
-                    // コンソールが閉じられる際のクリーンアップ
-                    Shutdown();
-                    return false; // OSに終了処理を継続させる
-                default:
-                    return false;
+                foreach (var proc in Process.GetProcessesByName("FortniteClient-Win64-Shipping"))
+                {
+                    proc.Kill();
+                    Thread.Sleep(500);
+                }
             }
+            catch { }
         }
 
         private static void Shutdown()
         {
-            // 重複実行を防ぐため、一度だけ呼び出されるように配慮
-            Console.WriteLine("Shutting down fiddler application and cleaning up...");
-            FiddlerApplication.Shutdown();
-            FortniteLauncher.KillFortniteProcess();
+            Console.WriteLine("Cleaning up...");
+            try
+            {
+                FiddlerApplication.Shutdown();
+            }
+            catch { }
+
+            try
+            {
+                FortniteLauncher.KillFortniteProcess();
+            }
+            catch { }
         }
     }
 }
