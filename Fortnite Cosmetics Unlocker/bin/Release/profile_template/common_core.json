@@ -1,0 +1,19 @@
+{
+    "created": "0001-01-01T00:00:00.000Z",
+    "updated": "0001-01-01T00:00:00.000Z",
+    "rvn": 1,
+    "wipeNumber": 0,
+    "accountId": "00000000000000000000000000000000",
+    "profileId": "common_core",
+    "version": "discord.gg/sakura-1430834820694413353",
+    "stats": {
+        "attributes": {
+            "current_mtx_platform": "Epic",
+            "undo_timeout": "min",
+            "allowed_to_send_gifts": true
+        }
+    },
+    "commandRevision": 0,
+    "_id": null,
+    "items": {}
+}

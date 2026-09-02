@@ -1,0 +1,147 @@
+{
+  "CosmeticLoadout:LoadoutSchema_Character": {
+    "loadoutSlots": [
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Character",
+        "equippedItemId": "AthenaCharacter:cid_defaultoutfit",
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Backpack",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Pickaxe",
+        "equippedItemId": "AthenaPickaxe:defaultpickaxe",
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Glider",
+        "equippedItemId": "AthenaGlider:defaultglider",
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Shoes",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Contrails",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Aura",
+        "equippedItemId": "SparksAura:sparksaura_default",
+        "itemCustomizations": []
+      }
+    ],
+    "shuffleType": "DISABLED"
+  },
+  "CosmeticLoadout:LoadoutSchema_Emotes": {
+    "loadoutSlots": [
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_0",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_1",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_2",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_3",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_4",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Emote_5",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      }
+    ],
+    "shuffleType": "DISABLED"
+  },
+  "CosmeticLoadout:LoadoutSchema_Wraps": {
+    "loadoutSlots": [
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_0",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_1",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_2",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_3",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_4",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_5",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Wrap_6",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      }
+    ],
+    "shuffleType": "DISABLED"
+  },
+  "CosmeticLoadout:LoadoutSchema_Vehicle": {
+    "loadoutSlots": [
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Vehicle_Body",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Vehicle_Skin",
+        "equippedItemId": null,
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Vehicle_Wheel",
+        "equippedItemId": "VehicleCosmetics_Wheel:id_wheel_oem",
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Vehicle_DriftSmoke",
+        "equippedItemId": "VehicleCosmetics_DriftTrail:id_drifttrail_standard",
+        "itemCustomizations": []
+      },
+      {
+        "slotTemplate": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Vehicle_Booster",
+        "equippedItemId": "VehicleCosmetics_Booster:id_booster_standard",
+        "itemCustomizations": []
+      }
+    ],
+    "shuffleType": "DISABLED"
+  }
+}
